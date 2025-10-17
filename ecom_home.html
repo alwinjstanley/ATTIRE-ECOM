@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTIRE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="ecom.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+/* body{margin-left: 20px;
+margin-right: 0px;} */
+
+.navbar{z-index: 2; position: sticky; top: 0%;
+background-color: white;}
+
+.navbar-brand:hover{color:cadetblue !important;}
+
+a{color: black;}
+a:hover{color: cadetblue;
+  transform: scale(1.06);
+}
+
+.nav-item{
+    color: black;
+}
+
+.nav-link:hover{color:cadetblue !important;}
+
+.card-img{
+  transition: transform 1s ease-in-out;
+}
+.card-img:hover{
+  transform: scale(1.08);
+}
+
+.col-md-4:hover{
+  overflow: hidden;
+}
+
+.card{
+  overflow: hidden;
+
+}
+.carousel-item {
+      text-align: center;
+      padding: 20px;
+    }
+    .testimonial-avatar {
+      width: 200px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .testimonial-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .testimonial-role {
+      font-size: 16px;
+      color: #888;
+    }
+    .testimonial-text {
+      font-style: italic;
+      color: #333;
+    }
+
+    #img1{
+      position: relative;
+    }
+
+    #img2{
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity:0% ;
+    }
+
+    #img2:hover{opacity: 100%;}
+</style>
+
+</head>
+<body style="font-family: sans-serif;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light pb-0 shadow" >
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-bag-shopping fa-shake p-2 " style="--fa-animation-duration: 4s;"></i>  ATTIRE</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ecom_home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ecom_men.html">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ecom_women.html">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonialCarousel">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            
+            </ul>
+        
+        
+          <div style="position: relative; left: 150px;">
+          <a href="ecom_login.html"><i class="fa-solid fa-user fa-beat p-3 fs-5" style="--fa-animation-duration: 2s;" ></i></a>
+          <a href="ecom_wishlist.html"><i class="fa-solid fa-heart fa-beat p-3  fs-5" style="--fa-animation-duration: 2s;"></i></a>
+          <a href="ecom_cart.html"><i class="fa-solid fa-cart-shopping fa-beat p-3 fs-5" style="--fa-animation-duration: 2s;"></i></a>
+          <a href="ecom_track.html"><i class="fa-solid fa-truck fa-beat p-3 fs-5" style="--fa-animation-duration: 2s;"></i></a>
+         </div>
+
+
+      </div>
+
+      </div>
+      </nav>
+
+
+      <!-- Carousal -->
+
+      <div class="row">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active p-0">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/home_page_4.jpg?format=webp&w=1093&dpr=1.3" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item p-0">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_4_RPufV69.jpg?format=webp&w=1093&dpr=1.3" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item p-0">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage-Banner_HXzP7UO.jpg?format=webp&w=1093&dpr=1.3" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div><br>
+
+      <!-- Offers -->
+
+      <div class="container">
+        <h3 id="trend"><center>TRENDING OFFERS</center></h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card bg-dark text-dark border borderless">
+              <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1740802219_8633061.jpg?format=webp&w=360&dpr=1.3" class="card-img" alt="...">
+              <div class="card-img-overlay" style="position: absolute; top: 65%; left: 25%;">
+                <h4 class="card-title fw-bold">50% DISCOUNT</h4>
+                <p class="card-text fw-bold">Don't Miss the Offer</p>
+                <a href="ecom_women.html" class="btn btn-outline-danger btn">Explore Now</a>
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card bg-dark text-white border borderless">
+              <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741088586_1151222.jpg?format=webp&w=360&dpr=1.3" class="card-img" alt="...">
+              <div class="card-img-overlay" style="position: absolute; top: 55%; left: 15%;">
+                <h4 class="card-title fw-bold">40% OFF.</h4>
+                <p class="card-text fw-bold">LIMITED TIME OFFER</p>
+                <a href="ecom_men.html" class="btn btn-outline-light btn">Explore Now</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-dark border borderless">
+              <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1739517901_8128357.jpg?format=webp&w=360&dpr=1.3" class="card-img" alt="...">
+              <div class="card-img-overlay" style="position: absolute; top: 50%; left: 15%;">
+                <h4 class="card-title fw-bold">BUY 1 GET 2.</h4>
+                <p class="card-text  fw-bold">GRAB YOUR ITEMS.</p>
+                <a href="ecom_women.html" class="btn btn-outline-secondary btn">Explore Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+  <!-- new arrivals -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <h3><center>NEW ARRIVALS</center></h3>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card" style="width: 16rem;">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741597702_8069584.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="..." id="img1">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741597702_3993457.jpg?format=webp&w=480&dpr=1.3" alt="" class="card-img-top" id="img2">
+          <div class="card-body">
+            <h5 class="card-title">ATR Originals: Retro</h5>
+            <p class="card-text"><i class="fa-solid fa-indian-rupee-sign"></i> 999</p>
+            <a href="ecom_addtocart.html" class="btn btn-danger">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card" style="width: 16rem;">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732858422_4448237.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="..." id="img1">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1732858422_9865456.jpg?format=webp&w=480&dpr=1.3" alt="" class="card-img-top" id="img2">
+
+          <div class="card-body">
+            <h5 class="card-title">Solids: Khaki Cargo</h5>
+            <p class="card-text"><i class="fa-solid fa-indian-rupee-sign"></i> 2399</p>
+            <a href="ecom_addtocart.html" class="btn btn-danger">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card" style="width: 16rem;">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1711703881_6651794.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="..." id="img1">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1706763490_2186324.jpg?format=webp&w=480&dpr=1.3" alt="" class="card-img-top" id="img2">
+          <div class="card-body">
+            <h5 class="card-title">Linen: Canary Green</h5>
+            <p class="card-text"><i class="fa-solid fa-indian-rupee-sign"></i> 1299</p>
+            <a href="ecom_addtocart.html" class="btn btn-danger">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="card" style="width: 16rem;">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722238463_7738992.jpg?format=webp&w=300&dpr=1.3" class="card-img-top" alt="..." id="img1">
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1722238463_4183718.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="" id="img2">
+          <div class="card-body">
+            <h5 class="card-title">Ribbed Top: Charcoal</h5>
+            <p class="card-text"><i class="fa-solid fa-indian-rupee-sign"></i> 799</p>
+            <a href="ecom_addtocart.html" class="btn btn-danger">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div><br>
+
+  <!-- advertise -->
+
+
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col">
+        <a href="ecom_women.html#topwears"><img width="100%" height="300px" src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_1_IEhGHSD.jpg?format=webp&w=1093&dpr=1.3" alt=""></a>
+      </div>
+    </div>
+  </div> <br>
+
+  <!-- categories -->
+
+  <div class="container" id="categories">
+    <div class="row">
+      <h3 style="color: cadetblue;"><center>CATEGORIES</center></h3>
+      <div class="col-md-4 col-sm-4">
+      <div class="card" style="width: 20rem;">
+        <a href="ecom_men.html#topwear"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/1.3_VNTneSA.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+     </div>
+    </div>
+       <div class="col-md-4 col-sm-4">
+       <div class="card" style="width: 20rem;">
+        <a href="ecom_women.html#tops"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Tops_copy_kSUeUkf.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+      </div>
+    </div>
+       <div class="col-md-4 col-sm-4">
+        <div class="card" style="width: 20rem;">
+        <a href="ecom_men.html#bottomwear"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/1.2_XyrOecj.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    
+    <div class="col-md-4 col-sm-4">
+      <div class="card" style="width: 20rem;">
+      <a href="ecom_men.html#tshirts"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/1.1_e6xhyp9.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+    </div>
+  </div>
+     <div class="col-md-4 col-sm-4">
+      <div class="card" style="width: 20rem;">
+      <a href="ecom_women.html#bottomwears"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Jenas_copy_bJT8qdF.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+    </div>
+  </div>
+     <div class="col-md-4 col-sm-4">
+      <div class="card" style="width: 20rem;">
+      <a href="ecom_men.html#sneakers"><img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/1.4_mVUKjrj.jpg?format=webp&w=480&dpr=1.3" class="card-img-top" alt="..."></a>
+    </div>
+  </div>
+  </div>
+</div>
+<br>
+
+  <!-- testimonial -->
+  <div class="container-fluid border border shadow"  style="background-color: rgb(247, 254, 253);">
+    <div class="row">
+      <div class="col-md-4">
+      <h2 style="color: cadetblue; padding-top: 100px;"><center>THEY ARE TALKING ABOUT US!</center></h2>
+    </div>
+    <div class="col-md-8">
+
+      <!-- Testimonial Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Testimonial Item 1 -->
+      <div class="carousel-item active">
+        <img src="data:image/jpeg;base64,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" class="testimonial-avatar" alt="Customer 1">
+        <p class="testimonial-name">John Doe</p>
+        <p class="testimonial-role">Customer</p>
+        <p class="testimonial-text"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+          <br> "I absolutely love this product! It exceeded my expectations, going to purchase more."</p>
+      </div>
+      <!-- Testimonial Item 2 -->
+      <div class="carousel-item">
+        <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww" class="testimonial-avatar" alt="Customer 2">
+        <p class="testimonial-name">Jane Smith</p>
+        <p class="testimonial-role">Customer</p>
+        <p class="testimonial-text"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+          <br> "Fantastic service! Quick delivery and the product quality is superb. Highly recommend!"</p>
+      </div>
+      <!-- Testimonial Item 3 -->
+      <div class="carousel-item">
+        <img src="data:image/jpeg;base64,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" class="testimonial-avatar" alt="Customer 3">
+        <p class="testimonial-name">Sam Wilson</p>
+        <p class="testimonial-role">Customer</p>
+        <p class="testimonial-text"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i> <br>
+          "Best purchase I've made in a long time! The value for money is unmatched."</p>
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+</div>
+</div>
+<br>
+
+  <!-- WHY CHOOSE US -->
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <h3 style="color: cadetblue;"><center>WHY CHOOSE US?</center></h3>
+
+      <div class="col">
+        <img width="100.9%" height="300px" src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_banner_1.jpg?format=webp&w=1093&dpr=1.3" alt="">
+
+      </div>
+    </div>
+  </div> <br>
+</div>
+
+<!-- Footer -->
+
+<div class="container-fluid bg-dark text-white">
+  <div class="row" id="contact">
+    <div class="col-md-12">
+      <a class="navbar-brand text-danger" href="#"><i class="fa-solid fa-bag-shopping fa-shake p-2 text-danger" style="--fa-animation-duration: 4s;"></i>  ATTIRE</a>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h6 style="color: cadetblue;">CONNECT WITH US</h6>
+      <li> <i class="fa-brands fa-facebook"></i> 500K people like us.</li>
+      <li><i class="fa-brands fa-instagram"></i> 250K people follow us. </li>
+      <li><i class="fa-brands fa-x-twitter"></i> 100k followers on X. </li>
+      <li><i class="fa-brands fa-youtube"></i> 1M subscribers on Youtube.</li>
+      <br>
+
+      <h6 style="color: cadetblue;">CALL US</h6>
+
+      <li><i class="fa-solid fa-phone"></i> +91 9645964088</li>
+
+      
+      </div>
+      <div class="col-md-3">
+        <h6 style="color: cadetblue;">OUR BRANCHES</h6>
+        <li>New Delhi</li>
+        <li>Chennai</li>
+        <li>Mumbai</li>
+        <li>Bengaluru</li>
+        <li>Kochi</li>
+        <br>
+
+        <h6 style="color: cadetblue;">EMAIL US</h6>
+
+      <li><i class="fa-solid fa-envelope"></i> attirestore@gmail.com</li><br>
+
+      </div>
+      <div class="col-md-5">
+        <h6 style="color: cadetblue;">OUR LOCATION</h6>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77662011445!2d77.30055944934517!3d12.954458685037883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1741507444059!5m2!1sen!2sin" width="350" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright -->
+
+<div class="container-fluid text-white" style="background-color: cadetblue;">
+  <div class="row">
+    <div class="col-12">
+      <center><i class="fa-regular fa-copyright text-white"></i> Copyright Reserved by The Attire 2025-26</center>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+   
+    
+</body>
+</html>
